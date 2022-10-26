@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Aliados tecno - Postulacion</title>
+    <link rel="stylesheet" href="http://red-aliados.herokuapp.com/css/app.css">
+    <link rel="stylesheet" href="../../css/styilesNav.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <script src="https://kit.fontawesome.com/b6028d284b.js" crossorigin="anonymous"></script>
+</head>
+<body >
+    <div class="main-wrapper">
+        <div class="page-wrapper">
+            <div class="content container-fluid " >
+                <!-- cabecera -->
+                <div class="header" >
+                    <!-- icono con titulo -->
+                    <div class="header-left "  >
+                        <a href="" class="logo"> <img src="../../img/logo grupo aliados.png"  style="width: 30%;  "> <span class="logop">Red-Aliados</span></a>
+                        <br>
+                        <a href="index.html" class="logo logo-small"> <img  src="../../img/logo grupo aliados.png"   style="font-size:30px;  margin-top: -50px; " ></a>
+                    </div>
+                    <a href="javascript:void(0);" id="toggle_btn">   <i class="material-icons p "  style="font-size:30px;  margin-top: -35px; padding-top: 100%;  ">dehaze</i></a>
+                    <a class="mobile_btn" id="mobile_btn"></a>
+
+                
+
+                           
+  
+                               
+                             <!-- <a class="nav-link active p " aria-current="page" href="../views/auth/login.html" type="submit" style="margin-left:1rem ;  margin-top: -35px;">
+                                  <i class="material-icons p "  style="font-size:50px;  margin-top: -35px; padding-top: 160%;  ">account_circle</i>
+                                 
+                                </a> -->
+                                
+                              
+                                <div class="d-flex flex-row-reverse bd-highlight" id="hola2">
+                                    <div class="p-2 bd-highlight">
+            
+                                        <div class="actionD">
+                                            <div class="profile" onclick="menuToggle();">
+                                                <a class="nav-link active p " aria-current="page" href="../views/auth/login.html" type="submit" style="margin-left:1rem ;  margin-top: -60px;"></a>
+                                                <i class="material-icons p "  style="font-size:50px;  margin-top: -35px; padding-top: 160%;  ">account_circle</i>
+                                            </div>
+                                            <div class="menuImg">
+                                                <h3>Hola<br><span>Administrador</span></h3> <!-- { $UsuarioLogeado['name'] } -->
+                                                <ul>
+                                                    <li><i class="far fa-user-circle"></i><a href="#"> Perfil</a></li>
+                                                    <li><i class="fas fa-sign-out-alt"></i><a href="../auth/login.html">Cerrar sesión</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+            
+                                        <script>
+                                            function menuToggle() {
+                                                const toggleMenu = document.querySelector('.menuImg');
+                                                toggleMenu.classList.toggle('active');
+                                            }
+                                        </script>
+                                    </div>
+                                </div>
+                            
+                     
+                </div>
+                  <!-- nav izquierdo -->
+                <div class="sidebar shadow-sm " id="sidebar">
+                    <div class="sidebar-inner slimscroll">
+                        <div id="sidebar-menu" class="sidebar-menu">
+                            <ul>
+                                <li class=""> <a href=""><i class="fas fa-home"></i>
+                                        <span>Inicio</span></a> </li>
+                                <li class="list-divider"></li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Permisos </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html"> Todas los permisos </a></li>
+                                        <li><a href=""> Agregar permisos </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-lightbulb"></i></i> <span> Roles
+                                        </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html"> Todos los roles </a></li>
+                                        <li><a href="crearAdmin.html"> Agregar roles </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-user"></i> <span> Usuarios </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html"> todos los usuarios </a></li>
+                                        <li><a href="crearAdmin.html"> Agregar usuario</a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-user-tie"></i> <span> Aliados </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html">Todos los aliados </a></li>
+                                        <li><a href="crearAdmin.html"> Agregar aliado </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-suitcase"></i><span> Talentos </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html">Todos los Talentos </a></li>
+                                        <li><a href="crearAdmin.html"> Agregar empleado </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-lightbulb"></i><span> Proyecto</span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="listAdmin.html">Todos los proyectos</a></li>
+                                        <li><a href="crearAdmin.html"> Agregar proyectos </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin nav izquierdo -->
+                		  
+<div class="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24 mt-24">
+	<div class="w-80 mx-auto mb-10 text-center">
+		<h1 class="text-yellow-600 text-3xl mb-4 font-bold">TUS DATOS</h1>
+		<img class="rounded-full" src="http://red-aliados.herokuapp.com/img/20943593.jpg" alt="">
+	</div>
+
+	<div class="sgForm">
+		<form>
+			<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-1/2 px-3 mb-6 md:mb-0">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="">¿A qué convocatoria te has presentado?</label><br>
+
+						<input type="radio" name="Numconvocatoria" value="1"> 1<br>
+						<input type="radio" name="Numconvocatoria" value="2 o más"> 2 o más<br>
+						<input type="radio" name="Numconvocatoria" value="Ninguna"> Ninguna
+					</div>
+
+					<div class="md:w-1/2 px-3 ">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
+							¿Cuáles?
+						</label>
+
+						<div class="multi-selector">
+							<div class="select-field">
+								<input type="text" placeholder="Convocatorias" class="input-selector">
+								<span class="down-arrow">&blacktriangledown;</span>
+							</div>
+
+							<br>
+							<div class="lista">
+								<label for="convocatoria1" class="convocatoria">
+									<input type="checkbox" id="convocatoria1">
+									Convocatoria 1: internet de las coasas
+								</label>
+								<label for="convocatoria2" class="convocatoria">
+									<input type="checkbox" id="convocatoria2">
+									Convocatoria 2
+								</label>
+								<label for="convocatoria3" class="convocatoria">
+									<input type="checkbox" id="convocatoria3">
+									Convocatoria 3
+								</label>
+								<label for="convocatoria4" class="convocatoria">
+									<input type="checkbox" id="convocatoria4">
+									Convocatoria 4
+								</label>
+							</div>
+
+							<script>
+								document.querySelector('.select-field').addEventListener('click', () => {
+									document.querySelector('.lista').classList.toggle('show');
+									document.querySelector('.down-arrow').classList.toggle('rotate180');
+								});
+							</script>
+						</div>
+
+						<!-- Fin Multi selector -->
+
+					</div>
+				</div>
+			</div>
+
+			<div class="-mx-3 md:flex mb-6">
+				<div class="md:w-full px-3">
+					<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+						Dirección de residencia*
+					</label>
+					<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-3 px-4 mb-3" id="application-link" type="text">
+				</div>
+			</div>
+			<div class="-mx-3 md:flex mb-2">
+				<div class="md:w-1/2 px-3 mb-6 md:mb-0">
+					<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="location">
+						Departamento*
+					</label>
+					<div>
+						<select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="location">
+							<option>Amazonas</option>
+							<option>Antioquia</option>
+							<option>Arauca</option>
+						</select>
+					</div>
+				</div>
+				<div class="md:w-1/2 px-3">
+					<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="job-type">
+						Ciudad*
+					</label>
+					<div>
+						<select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="job-type">
+							<option>Leticia</option>
+							<option>Medellín</option>
+							<option>Arauca</option>
+						</select>
+					</div>
+				</div>
+			</div>
+
+			<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-1/2 px-3 mb-6 md:mb-0">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="">¿Haces parte de la comunidad SENA?</label><br>
+
+
+						<input type="radio" name="parteComuni" value="Sí"> Sí<br>
+
+						<input type="radio" name="parteComuni" value="No"> No
+
+					</div>
+					<div class="md:w-1/2 px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
+							Regional
+						</label>
+						<div>
+							<select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="department">
+								<option>Engineering</option>
+								<option>Design</option>
+								<option>Customer Support</option>
+							</select>
+						</div>
+					</div>
+					<div class="md:w-1/2 px-3 ">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="department">
+							Cargo
+						</label>
+						<div class="">
+							<select class="w-full bg-gray-200 border border-gray-200 text-black text-xs py-3 px-4 pr-8 mb-3 rounded" id="department">
+								<option>Engineering</option>
+								<option>Design</option>
+								<option>Customer Support</option>
+							</select>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="-mx-3 md:flex mt-2">
+				<div class="md:w-full px-3">
+					<button type="button" class="md:w-full bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(2)">
+						Continuar
+					</button>
+				</div>
+			</div>
+	</div>
+	</form>
+
+	<div class="sgForm">
+		<form>
+			<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+
+				<h1 class="text-yellow-600 text-center mb-2 font-semibold">DATOS DE LA EMPRESA</h1>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Razón social de la empresa y/o negocio /nombre y apellidos*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Nombre comercial*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Naturaleza jurídica*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Representante legal*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Cédula del representante legal*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Dirección de la empresa y/o negocio*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Teléfonos*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Correo electrónico (empresa)*
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+
+
+				<div class="-mx-3 md:flex mt-2 ">
+					<div class="md:w-full px-3  flex justify-around">
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(1);window.scrollTo(0, 0);"> Volver</button>
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(3); window.scrollTo(0, 70);">
+							Continuar
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="sgForm">
+		<form>
+			<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+
+				<h1 class="text-yellow-600 text-center mb-2 font-semibold">DATOS DE LA EMPRESA</h1>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Registro Mercantil #:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Matrícula de industria y Comercio #:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Régimen Tributario:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Registro Único Tributario:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Sector económico:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Actividad principal:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Descripción de productos
+						</label>
+						<textarea class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text"></textarea>
+					</div>
+				</div>
+
+
+
+				<div class="-mx-3 md:flex mt-2 ">
+					<div class="md:w-full px-3  flex justify-around">
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(2);window.scrollTo(0, 0);"> Volver</button>
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(4); window.scrollTo(0, 70);">
+							Continuar
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+
+
+	<div class="sgForm">
+		<form>
+			<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+
+
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Subir modelo de negocio:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="file">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Rut de la empresa:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="file">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Cámara de comercio de la empresa:
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="file">
+					</div>
+				</div>
+				<div class="-mx-3 md:flex mb-6">
+					<div class="md:w-full px-3">
+						<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+							Portafolio de servicios(opcional):
+						</label>
+						<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="file">
+					</div>
+				</div>
+
+
+
+
+				<div class="-mx-3 md:flex mt-2 ">
+					<div class="md:w-full px-3  flex justify-around">
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(3);window.scrollTo(0, 0);"> Volver</button>
+						<button type="button" class="md:w-80 bg-gray-900 text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot">
+							Continuar
+						</button>
+					</div>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+
+
+</div>
+
+
+</div><script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+<script src="http://red-aliados.herokuapp.com/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="http://red-aliados.herokuapp.com/assets/js/script.js"></script>
+
+<!-- datatables -->
+<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        $('#example').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $('#TablaPostulaciones').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $('#TablaUsuarios').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
+            }
+        });
+    });
+
+    $(document).ready(function() {
+        $('#TablaAliados').DataTable({
+            language: {
+                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
+            }
+        });
+    });
+</script>
+
+
+
+
+<!-- datatables -->
+<!-- Livewire Scripts -->
+
+<script src="/livewire/livewire.js?id=c69d0f2801c01fcf8166" data-turbo-eval="false" data-turbolinks-eval="false" ></script>
+<script data-turbo-eval="false" data-turbolinks-eval="false" >
+if (window.livewire) {
+    console.warn('Livewire: It looks like Livewire\'s @livewireScripts JavaScript assets have already been loaded. Make sure you aren\'t loading them twice.')
+}
+
+window.livewire = new Livewire();
+window.livewire.devTools(true);
+window.Livewire = window.livewire;
+window.livewire_app_url = '';
+window.livewire_token = 'fa9h9gdzb0e3oza0RS4HVN29lvm3uLsfFV13nXJO';
+
+/* Make sure Livewire loads first. */
+if (window.Alpine) {
+    /* Defer showing the warning so it doesn't get buried under downstream errors. */
+    document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(function() {
+            console.warn("Livewire: It looks like AlpineJS has already been loaded. Make sure Livewire\'s scripts are loaded before Alpine.\\n\\n Reference docs for more info: http://laravel-livewire.com/docs/alpine-js")
+        })
+    });
+}
+
+/* Make Alpine wait until Livewire is finished rendering to do its thing. */
+window.deferLoadingAlpine = function (callback) {
+    window.addEventListener('livewire:load', function () {
+        callback();
+    });
+};
+
+let started = false;
+
+window.addEventListener('alpine:initializing', function () {
+    if (! started) {
+        window.livewire.start();
+
+        started = true;
+    }
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    if (! started) {
+        window.livewire.start();
+
+        started = true;
+    }
+});
+
+
+
+
+   
+    const btn = document.querySelector("button.mobile-menu-button");
+    const btnimg = document.querySelector("svg.imagensita");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("mouseenter", () => {
+      btnimg.classList.add('hover:text-red-500');
+      btnimg.classList.add('transitionnnn');
+    });
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+
+  </script>
+	<script src="http://red-aliados.herokuapp.com/js/main/signup.js"></script>
+  <script src="../../js/listAdmin.js"></script>
+</body>
+</html>
