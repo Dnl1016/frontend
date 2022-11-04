@@ -6575,7 +6575,7 @@ h3.page-sub-title {
     }
 
     .mini-sidebar .header-left .logo.logo-small {
-        display: block
+        display: flex;
     }
 
     .mini-sidebar .header .header-left {
@@ -6687,7 +6687,7 @@ h3.page-sub-title {
     .logo-small{
 
         text-align: center;
-        top: 23px;
+        top: 22px;
         position: relative;
     }
 
@@ -7037,6 +7037,7 @@ h3.page-sub-title {
         display: none
     }
 
+    
 }
 
 

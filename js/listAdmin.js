@@ -10,5 +10,27 @@ function getUsuarios(done) {
     
 }
 getUsuarios(data =>{
-    console.log(data);
+    // console.log(data);
+    data.results.forEach(usuario => {
+        const tr = document.createRange().createContextualFragment(
+        `<tr>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        <td>${usuario.id}</td>
+        
+        </tr>`
+
+        );
+        const main
+        = document.querySelector("main");
+
+        main.append(tr)
+        
+    });
 });
