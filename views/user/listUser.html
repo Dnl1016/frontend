@@ -5,21 +5,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Red aliados</title>
-    <link rel="shortcut icon" type="image/x-icon" href="http://red-aliados.herokuapp.com/assets/img/favicon.png">
-    <link rel="stylesheet" href="http://red-aliados.herokuapp.com/assets/css/bootstrap.min.css">
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="http://red-aliados.herokuapp.com/assets/img/favicon.png"> -->
+    <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <link rel="stylesheet" href="http://red-aliados.herokuapp.com/assets/css/feathericon.min.css">
+    <link rel="stylesheet" href="../../lib/css/feathericon.min.css">
     <link rel="stylesheet" href="../../css/style.css">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-
-        <!-- Livewire Styles -->
+    <link href="../../lib/css/datatables.min.css" rel="stylesheet">
 <style >
     
 </style>
@@ -76,7 +72,7 @@
                     <div class="sidebar-inner slimscroll">
                         <div id="sidebar-menu" class="sidebar-menu">
                             <ul>
-                                <li class=""> <a href="menuAdmin.html"><i class="fas fa-home"></i>
+                                <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
                                         <span>Inicio</span></a> </li>
                                 <li class="list-divider"></li>
                                 <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Configuraciones</span>
@@ -91,7 +87,7 @@
                                         </span> <span class="menu-arrow"></span></a>
                                     <ul class="submenu_class" style="display: none;">
                                         <li><a href="../personas/listPersonas.html"> Personas </a></li>
-                                        <li><a href="../talentos/listtalentos.html"> Talentos </a></li>
+                                        <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
                                         <li><a href="../empresas/listempresas.html"> Empresas </a></li>
                                     </ul>
                                 </li>
@@ -116,79 +112,79 @@
                 <!-- fin nav izquierdo -->
                 		
 				<br><br><br>
-
-    <table id="TablaUsuarios" class="table table-striped" style="width:100%">
-        <thead style="background-color: #449B23; color: #fff">
-            <tr>
-                <th># Usuario</th>
-                <th>Correo</th>
-                <th>Verificado</th>
-                <th>Administrador</th>
-                <th>Fecha Creaciont</th>
-                <th>Fecha Actualizacion</th>
-                <th>Fecha Eliminacion</th>
-                <th># Persona</th>
-                <th>Aliado</th>
-                <th>Estado</th>
-                <th>Acciones</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>1</td>
-                <td>Daniel104@hotmail.com</td>
-                <td>0</td>
-                <td>true</td>
-                <td>2011/04/25</td>
-                <td>2011/04/25</td>
-                <td> </td>
-                <td>1</td>
-                <td>3</td>
-                <td>Activo</td>
-            </tr>
-        </tbody>
-    </table>
+<div class="container-fluid">
+    <div class="card">
+        <div class="card-header">
+            <div class="d-flex justify-content-between">
+                <h1>Lista de usuarios</h1>
+                <a href="createUser.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Usuario</a>
+            </div>
+        </div>
+    <div class="card-body">
+        <table id="listarRegistros" class="table table-striped" style="width:100%">
+            <thead style="background-color: #449B23; color: #fff">
+                <tr>
+                    <th># Usuario</th>
+                    <th>Correo</th>
+                    <th>Verificado</th>
+                    <th>Administrador</th>
+                    <th>Fecha Creaciont</th>
+                    <th>Fecha Actualizacion</th>
+                    <th>Fecha Eliminacion</th>
+                    <th># Persona</th>
+                    <th>Aliado</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Daniel104@hotmail.com</td>
+                    <td>0</td>
+                    <td>true</td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                    <td> </td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>Activo</td>
+                    <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Carlos432@gmail.com</td>
+                    <td>0</td>
+                    <td>true</td>
+                    <td>2011/04/25</td>
+                    <td>2011/04/25</td>
+                    <td> </td>
+                    <td>1</td>
+                    <td>3</td>
+                    <td>Activo</td>
+                    <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                </tr>
+            </tbody>
+        </table>
+        </div>
+    </div>
+</div>
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-<script src="http://red-aliados.herokuapp.com/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-<script src="http://red-aliados.herokuapp.com/assets/js/script.js"></script>
+<!-- <script src="http://red-aliados.herokuapp.com/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script> -->
+<!-- <script src="http://red-aliados.herokuapp.com/assets/js/script.js"></script> -->
 
-<!-- datatables -->
-<script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+<!--  datatables -->
+ <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script> 
+<!-- Bootstrap core JavaScript -->
+<script src="../vendor/jquery/jquery.min.js"></script>
+<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- Core plugin JavaScript-->
+<script src="../Layout/vendor/jquery-easing/jquery.easing.min.js"></script>
+<!-- Custom scripts for all pages-->
 
-<script>
-    $(document).ready(function() {
-        $('#example').DataTable({
-            language: {
-                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $('#TablaPostulaciones').DataTable({
-            language: {
-                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $('#TablaUsuarios').DataTable({
-            language: {
-                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
-            }
-        });
-    });
-
-    $(document).ready(function() {
-        $('#TablaAliados').DataTable({
-            language: {
-                url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/es_es.json'
-            }
-        });
-    });
-</script>
+<script src="../../lib/js/datatables.min.js"></script>
+<script src="../../lib/js/datatables.js"></script>  
 <script src="../../js/listAdmin.js"></script>
 
 </body>
