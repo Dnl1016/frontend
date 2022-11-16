@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
-	<title>Red aliados</title>
-	<link rel="shortcut icon"type="image/png" href="../../lib/img/logo grupo aliados.png"  />
+    <title>Red aliados</title>
+    <link rel="shortcut icon"type="image/png" href="../../lib/img/logo grupo aliados.png"  />
     <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../lib/css/feathericon.min.css">
-	<link rel="stylesheet" href="../../lib/css/Formstyle.css">
     <link rel="stylesheet" href="../../lib/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="../../lib/css/datatables.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="main-wrapper">
@@ -52,6 +52,7 @@
                         </div>
                     </div>
             </div>
+
             <!-- fin cabecera -->
             <!-- nav izquierdo -->
             <div class="sidebar shadow-sm " id="sidebar">
@@ -64,7 +65,7 @@
                             <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
                                     <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
-                                  
+                                   
                                     <li><a href="../roles/listRoles.html"> Roles </a></li>
                                     <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
                                 </ul>
@@ -103,12 +104,73 @@
                     </div>
                 </div>
             </div>
-            <!-- fin nav izquierdo -->
+            <!-- fin nav izquierdo -->		
+			<br><br><br>
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h2>Tipo de  documentos</h2>
+                            <a href="crearDocu.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo </a>
+                            
+                        </div>
+                        <!-- Button trigger modal -->
+    
+  
+  
+                    <!-- Vertically centered modal -->
 
+                    <!-- tabla -->
+                <div class="card-body">
+                    <table id="listarRegistros" class="table table-striped" style="width:100%">
+                        <thead style="background-color: #449B23; color: #fff">
+                            <tr>
+                                <th># </th>
+                                <th style="text-align:center;">Tipo de documento</th>
+                               
+                                <th >Acciones</th>
 
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-            <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-            <script src="../../lib/js/script.js"></script>
-            <script src="../../lib/js/signup.js"></script>
-        </body>
-        </html>
+                                
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td style="text-align:center;">Daniel104@hotmail.com</td>
+                              
+
+                            
+                           <td ><a  href="editDocu.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                     <a  href="editDocu.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
+                            </tr> 
+                            <tr>
+                                <td>2</td>
+                                <td style="text-align:center;">Carlos432@gmail.com</td>
+                                
+                                <td ><a  href="editDocu.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editDocu.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="../../lib/js/script.js"></script>
+
+    <!--  datatables -->
+    <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script> 
+    <!-- Bootstrap core JavaScript -->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../Layout/vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../../lib/js/datatables.min.js"></script>
+    <script src="../../lib/js/datatables.js"></script>  
+    <script src="../../js/listAdmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+</body>

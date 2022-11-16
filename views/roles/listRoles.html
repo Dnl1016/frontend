@@ -61,17 +61,18 @@
                             <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
                                     <span>Inicio</span></a> </li>
                             <li class="list-divider"></li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Configuraciones</span>
+                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
                                     <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../user/listUser.html"> Usuarios </a></li>
+                                    
                                     <li><a href="../roles/listRoles.html"> Roles </a></li>
                                     <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
                                 </ul>
                             </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Talentos
+                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Usuarios
                                     </span> <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
+                                    <li><a href="../user/listUser.html"> Usuarios </a></li>
                                     <li><a href="../personas/listPersonas.html"> Personas </a></li>
                                     <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
                                     <li><a href="../empresas/listempresas.html"> Empresas </a></li>
@@ -91,6 +92,13 @@
                                     <li><a href="../lineas/listLineas.html"> Lineas </a></li>
                                 </ul>
                             </li>
+                            <li class="submenu"> <a href="#"><i class="fas fa-cog"></i></i></i> <span>Configuraciones
+                            </span> <span class="menu-arrow"></span></a>
+                        <ul class="submenu_class" style="display: none;">
+                            <li><a href="../tipo_documento/listDocu.html"> Tipo documento </a></li>
+                           
+                        </ul>
+                    </li>
                         </ul>
                     </div>
                 </div>
@@ -112,7 +120,7 @@
                                 <th>#</th>
                                 <th>Rol</th>
                                 <th>Estado</th>
-                                <th>Descripcion</th>
+
                                 <th>Acciones</th>
                             </tr>
                         </thead>
@@ -121,16 +129,18 @@
                                 <td>1</td>
                                 <td>Administrador</td>
                                 <td>Activo</td>
-                                <td>crear, editar, eliminar</td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                               
+                                <td><a  href="editRol.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editRol.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Usuario</td>
                                 <td>Inactivo</td>
-                                <td></td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
-                            </tr>
+                            
+                                <td><a  href="editRol.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editRol.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td>  
+                                </tr>
                         </tbody>
                     </table>
                     </div>

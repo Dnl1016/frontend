@@ -52,6 +52,7 @@
                         </div>
                     </div>
             </div>
+
             <!-- fin cabecera -->
             <!-- nav izquierdo -->
             <div class="sidebar shadow-sm " id="sidebar">
@@ -61,17 +62,18 @@
                             <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
                                     <span>Inicio</span></a> </li>
                             <li class="list-divider"></li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Configuraciones</span>
+                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
                                     <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../user/listUser.html"> Usuarios </a></li>
+                                   
                                     <li><a href="../roles/listRoles.html"> Roles </a></li>
                                     <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
                                 </ul>
                             </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Talentos
+                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Usuarios
                                     </span> <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
+                                    <li><a href="../user/listUser.html"> Usuario </a></li>
                                     <li><a href="../personas/listPersonas.html"> Personas </a></li>
                                     <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
                                     <li><a href="../empresas/listempresas.html"> Empresas </a></li>
@@ -91,6 +93,13 @@
                                     <li><a href="../lineas/listLineas.html"> Lineas </a></li>
                                 </ul>
                             </li>
+                            <li class="submenu"> <a href="#"><i class="fas fa-cog"></i></i></i> <span>Configuraciones
+                            </span> <span class="menu-arrow"></span></a>
+                        <ul class="submenu_class" style="display: none;">
+                            <li><a href="../tipo_documento/listDocu.html"> Tipo documento </a></li>
+                           
+                        </ul>
+                    </li>
                         </ul>
                     </div>
                 </div>
@@ -102,9 +111,36 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
                             <h1>Lista de usuarios</h1>
-                            <a href="createUser.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Usuario</a>
+                           
+                              <a href="createUser.html" class="btn btn " data-toggle="modal" data-target="#exampleModal" style="height: 50%; background-color: #449B23;  color: #fff"  >Nuevo Usuario</a>
+                            
                         </div>
-                    </div>
+                        <!-- Button trigger modal -->
+    
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Seleccione</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h6>¿El usuario a crear ya se encuentra con datos personales registrados?</h6>
+        </div>
+        <div class="modal-footer">
+            <a  href="createUser.html" type="button" class="btn btn" style="height: 50%; background-color: #449B23;  color: #fff" >Si</a>
+          <a  href="CrearPersona.html" type="button" class="btn btn-dark"  >No</a>
+        </div>
+      </div>
+    </div>
+  </div>
+                    <!-- Vertically centered modal -->
+
+                    <!-- tabla -->
                 <div class="card-body">
                     <table id="listarRegistros" class="table table-striped" style="width:100%">
                         <thead style="background-color: #449B23; color: #fff">
@@ -134,9 +170,11 @@
                                 <td>1</td>
                                 <td>3</td>
                                 <td>Activo</td>
-                                <td><i class="fas fa-edit text-green-500 "><a href="editUser.html" class="mr-3 ml-3"></a></i>
-                                     <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
-                            </tr>
+
+                            
+                           <td><a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                     <a  href="editUser.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
+                            </tr> 
                             <tr>
                                 <td>2</td>
                                 <td>Carlos432@gmail.com</td>
@@ -148,7 +186,8 @@
                                 <td>1</td>
                                 <td>3</td>
                                 <td>Activo</td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="editUser.html" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                                <td><a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editUser.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
                             </tr>
                         </tbody>
                     </table>
@@ -171,4 +210,6 @@
     <script src="../../lib/js/datatables.min.js"></script>
     <script src="../../lib/js/datatables.js"></script>  
     <script src="../../js/listAdmin.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>

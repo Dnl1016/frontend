@@ -64,7 +64,6 @@
                             <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
                                     <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
-                                  
                                     <li><a href="../roles/listRoles.html"> Roles </a></li>
                                     <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
                                 </ul>
@@ -104,11 +103,57 @@
                 </div>
             </div>
             <!-- fin nav izquierdo -->
-
-
-            <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-            <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-            <script src="../../lib/js/script.js"></script>
-            <script src="../../lib/js/signup.js"></script>
-        </body>
-        </html>
+			<div class="bg-gray-100 mx-auto max-w-6xl bg-white  px-12 lg:px-24 shadow-xl mb-14 mt-24">
+			<br>
+				<div class="sgForm">
+					<form>
+						<div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4 flex flex-col">
+							<div class="-mx-3 md:flex mb-6">
+								<div class="md:w-1/2 px-3 mb-6 md:mb-0">
+								<div class="md:w-1/2 px-3 ">
+									<div class="multi-selector">
+										<script>
+											document.querySelector('.select-field').addEventListener('click', () => {
+											document.querySelector('.lista').classList.toggle('show');
+											document.querySelector('.down-arrow').classList.toggle('rotate180');
+											});
+										</script>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Fin Multi selector -->
+						<h1 class= "text-black-600 text-4xl mb-4"  style="color:#449B23; padding-top: -2%;">CREAR TIPO DOCUMENTOS</h1>
+						
+							
+							
+						<div class="-mx-3 md:flex mb-6">
+							<div class="md:w-full px-3">
+								<label class="uppercase tracking-wide text-black text-xs font-bold mb-2" for="application-link">
+									nombre*
+								</label>
+								<input class="w-full bg-gray-200 text-black border border-gray-200 rounded py-1 px-2 mb-3" id="application-link" type="text">
+							</div>
+						</div>
+						
+							
+					<div class="-mx-3 md:flex mt-2 ">
+						<div class="md:w-full px-3  flex justify-around">
+							<a href="listDocu.html" type="button" class="md:w-80 text-center text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot"  style="background-color:#449B23 ;">
+								Volver
+							</a>
+							<button type="button" class="md:w-80  text-white font-bold py-2 px-4 border-b-4 hover:border-b-2 border-gray-500 hover:border-gray-100 rounded-full btnDot" onclick="currentSlide(3); window.scrollTo(0, 70);" style="background-color:#449B23 ;">
+								Enviar
+							</button>
+						</div>
+					</div>
+				
+				</form>
+			
+		</div>
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+	<script src="../../lib/js/script.js"></script>
+	<script src="../../lib/js/signup.js"></script>
+</body>
+</html>

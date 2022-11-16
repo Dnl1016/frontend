@@ -61,17 +61,18 @@
                             <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
                                     <span>Inicio</span></a> </li>
                             <li class="list-divider"></li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Configuraciones</span>
+                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
                                     <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../user/listUser.html"> Usuarios </a></li>
+                                    
                                     <li><a href="../roles/listRoles.html"> Roles </a></li>
                                     <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
                                 </ul>
                             </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Talentos
+                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Usuarios
                                     </span> <span class="menu-arrow"></span></a>
                                 <ul class="submenu_class" style="display: none;">
+                                    <li><a href="../user/listUser.html"> Usuario </a></li>
                                     <li><a href="../personas/listPersonas.html"> Personas </a></li>
                                     <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
                                     <li><a href="../empresas/listempresas.html"> Empresas </a></li>
@@ -91,6 +92,13 @@
                                     <li><a href="../lineas/listLineas.html"> Lineas </a></li>
                                 </ul>
                             </li>
+                            <li class="submenu"> <a href="#"><i class="fas fa-cog"></i></i></i> <span>Configuraciones
+                            </span> <span class="menu-arrow"></span></a>
+                        <ul class="submenu_class" style="display: none;">
+                            <li><a href="../tipo_documento/listDocu.html"> Tipo documento </a></li>
+                           
+                        </ul>
+                    </li>
                         </ul>
                     </div>
                 </div>
@@ -101,53 +109,51 @@
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
-                            <h1>Lista de usuarios</h1>
-                            <a href="createUser.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Usuario</a>
+                            <h1>Lista de personas</h1>
+                            <a href="createPersona.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Persona</a>
                         </div>
                     </div>
                 <div class="card-body">
                     <table id="listarRegistros" class="table table-striped" style="width:100%">
                         <thead style="background-color: #449B23; color: #fff">
                             <tr>
-                                <th># Usuario</th>
+                                <th>#</th>
+                                <th>Nombre</th>
                                 <th>Correo</th>
-                                <th>Verificado</th>
-                                <th>Administrador</th>
-                                <th>Fecha Creaciont</th>
+                                <th>Tipo de documento</th>
+                                <th>Documento</th>
+                                <th>Telefono</th>
+                                <th>Fecha Creacion</th>
                                 <th>Fecha Actualizacion</th>
                                 <th>Fecha Eliminacion</th>
-                                <th># Persona</th>
-                                <th>Aliado</th>
-                                <th>Estado</th>
                                 <th>Acciones</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>1</td>
+                                <td>Daniel David</td>
                                 <td>Daniel104@hotmail.com</td>
-                                <td>0</td>
-                                <td>true</td>
+                                <td>Cedula</td>
+                                <td>100086908</td>
+                                <td>3297893456</td>
                                 <td>2011/04/25</td>
                                 <td>2011/04/25</td>
                                 <td> </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>Activo</td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                                <td><a  href="editPersona.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editPersona.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td>Carlos432@gmail.com</td>
-                                <td>0</td>
-                                <td>true</td>
+                                <td>juan Carlos pinzon</td>
+                                <td>carlos104@hotmail.com</td>
+                                <td>Cedula</td>
+                                <td>1000878988</td>
+                                <td>3297893542</td>
                                 <td>2011/04/25</td>
                                 <td>2011/04/25</td>
-                                <td> </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>Activo</td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                                <td><a  href="editPersona.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                    <a  href="editPersona.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
                             </tr>
                         </tbody>
                     </table>
