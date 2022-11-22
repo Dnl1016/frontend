@@ -106,47 +106,7 @@
             </div>
             <!-- fin nav izquierdo -->		
 			<br><br><br>
-            <!-- inicio de contenido datatable -->
-            <div class="container-fluid">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between">
-                            <h1>Lista de roles</h1>
-                            <a href="createRol.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Rol</a>
-                        </div>
-                    </div>
-                <div class="card-body">
-                    <table id="listarRegistros" class="table table-striped" style="width:100%">
-                        <thead style="background-color: #449B23; color: #fff">
-                            <tr>
-                                <th>#</th>
-                                <th>Rol</th>
-                                <th>Estado</th>
-
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Administrador</td>
-                                <td>Activo</td>
-                               
-                                <td><a  href="editRol.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                    <a  href="editRol.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Usuario</td>
-                                <td>Inactivo</td>
-                            
-                                <td><a  href="editRol.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                    <a  href="editRol.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td>  
-                                </tr>
-                        </tbody>
-                    </table>
-                    </div>
-                </div>
+            
             </div>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>

@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
     <title>Red aliados</title>
-    <link rel="shortcut icon"type="image/png" href="../../lib/img/logo grupo aliados.png"  />
+    <link rel="shortcut icon" type="image/png" href="../../lib/img/logo grupo aliados.png" />
     <link rel="stylesheet" href="../../lib/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../lib/css/feathericon.min.css">
     <link rel="stylesheet" href="../../lib/css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../lib/css/datatables.min.css" rel="stylesheet">
 </head>
+
 <body>
     <div class="main-wrapper">
         <div class="page-wrapper">
-            <div class="content container-fluid " >
-            <!-- cabecera -->
-                <div class="header" >
-                <!-- icono con titulo -->
-                    <div class="header-left "  >
-                        <a href="" class="logo"> <img src="../../lib/img/logo grupo aliados.png"  style="width: 30%;  "> <span class="logop">Red-Aliados</span></a>
+            <div class="content container-fluid ">
+                <!-- cabecera -->
+                <div class="header">
+                    <!-- icono con titulo -->
+                    <div class="header-left ">
+                        <a href="" class="logo"> <img src="../../lib/img/logo grupo aliados.png" style="width: 30%;  ">
+                            <span class="logop">Red-Aliados</span></a>
                         <br>
-                        <a href="../admin/menuAdmin.html" class="logo logo-small"> <img  src="../../lib/img/logo grupo aliados.png"   style="font-size:30px;  margin-top: -50px; " ></a>
+                        <a href="../admin/menuAdmin.html" class="logo logo-small"> <img
+                                src="../../lib/img/logo grupo aliados.png"
+                                style="font-size:30px;  margin-top: -50px; "></a>
                     </div>
-                    <a href="javascript:void(0);" id="toggle_btn">   <i class="material-icons p "  style="font-size:30px;  margin-top: -35px; padding-top: 100%;  ">dehaze</i></a>
+                    <a href="javascript:void(0);" id="toggle_btn"> <i class="material-icons p "
+                            style="font-size:30px;  margin-top: -35px; padding-top: 100%;  ">dehaze</i></a>
                     <a class="mobile_btn" id="mobile_btn"></a>
-            
+
                     <div class="d-flex flex-row-reverse bd-highlight" id="hola2">
                         <div class="p-2 bd-highlight">
                             <div class="actionD">
                                 <div class="profile" onclick="menuToggle();">
-                                    <a class="nav-link active p " aria-current="page" href="../views/auth/login.html" type="submit" style="margin-left:1rem ;  margin-top: -60px;"></a>
-                                    <i class="material-icons p "  style="font-size:50px;  margin-top: -35px; padding-top: 160%;  ">account_circle</i>
+                                    <a class="nav-link active p " aria-current="page" href="../views/auth/login.html"
+                                        type="submit" style="margin-left:1rem ;  margin-top: -60px;"></a>
+                                    <i class="material-icons p "
+                                        style="font-size:50px;  margin-top: -35px; padding-top: 160%;  ">account_circle</i>
                                 </div>
                                 <div class="menuImg">
-                                    <h3>Hola<br><span>Administrador</span></h3> 
+                                    <h3>Hola<br><span>Administrador</span></h3>
                                     <ul>
                                         <li><i class="far fa-user-circle"></i><a href="#"> Perfil</a></li>
-                                        <li><i class="fas fa-sign-out-alt"></i><a href="../auth/login.html">Cerrar sesión</a></li>
+                                        <li><i class="fas fa-sign-out-alt"></i><a href="../auth/login.html">Cerrar
+                                                sesión</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -51,165 +60,205 @@
                             </script>
                         </div>
                     </div>
-            </div>
-
-            <!-- fin cabecera -->
-            <!-- nav izquierdo -->
-            <div class="sidebar shadow-sm " id="sidebar">
-                <div class="sidebar-inner slimscroll">
-                    <div id="sidebar-menu" class="sidebar-menu">
-                        <ul>
-                            <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
-                                    <span>Inicio</span></a> </li>
-                            <li class="list-divider"></li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
-                                    <span class="menu-arrow"></span></a>
-                                <ul class="submenu_class" style="display: none;">
-                                   
-                                    <li><a href="../roles/listRoles.html"> Roles </a></li>
-                                    <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Usuarios
-                                    </span> <span class="menu-arrow"></span></a>
-                                <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../user/listUser.html"> Usuario </a></li>
-                                    <li><a href="../personas/listPersonas.html"> Personas </a></li>
-                                    <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
-                                    <li><a href="../empresas/listempresas.html"> Empresas </a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-lightbulb"></i> <span> Proyectos
-                                    </span> <span class="menu-arrow"></span></a>
-                                <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../ideas/listIdea.html"> Ideas </a></li>
-                                    <li><a href="../proyectos/listProyectos.html"> Proyectos </a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu"> <a href="#"> <i class="fas fa-user-tie"></i></i> <span>Aliados
-                                    </span> <span class="menu-arrow"></span></a>
-                                <ul class="submenu_class" style="display: none;">
-                                    <li><a href="../aliados/listAliados.html"> Aliados </a></li>
-                                    <li><a href="../lineas/listLineas.html"> Lineas </a></li>
-                                </ul>
-                            </li>
-                            <li class="submenu"> <a href="#"><i class="fas fa-cog"></i></i></i> <span>Configuraciones
-                            </span> <span class="menu-arrow"></span></a>
-                        <ul class="submenu_class" style="display: none;">
-                            <li><a href="../tipo_documento/listDocu.html"> Tipo documento </a></li>
-                           
-                        </ul>
-                    </li>
-                        </ul>
-                    </div>
                 </div>
-            </div>
-            <!-- fin nav izquierdo -->		
-			<br><br><br>
-            <div class="container-fluid">
-                <div class="card">
-                    <div class="card-header">
-                        <div class="d-flex justify-content-between">
-                            <h1>Lista de usuarios</h1>
-                           
-                              <a href="createUser.html" class="btn btn " data-toggle="modal" data-target="#exampleModal" style="height: 50%; background-color: #449B23;  color: #fff"  >Nuevo Usuario</a>
-                            
+
+                <!-- fin cabecera -->
+                <!-- nav izquierdo -->
+                <div class="sidebar shadow-sm " id="sidebar">
+                    <div class="sidebar-inner slimscroll">
+                        <div id="sidebar-menu" class="sidebar-menu">
+                            <ul>
+                                <li class=""> <a href="../admin/menuAdmin.html"><i class="fas fa-home"></i>
+                                        <span>Inicio</span></a> </li>
+                                <li class="list-divider"></li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-key"></i> <span>Privilegios</span>
+                                        <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+
+                                        <li><a href="../roles/listRoles.html"> Roles </a></li>
+                                        <li><a href="../permisos/listPermisos.html"> Permisos </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-user"></i></i></i> <span> Usuarios
+                                        </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="../user/listUser.html"> Usuario </a></li>
+                                        <li><a href="../personas/listPersonas.html"> Personas </a></li>
+                                        <li><a href="../talentos/listTalentos.html"> Talentos </a></li>
+                                        <li><a href="../empresas/listempresas.html"> Empresas </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-lightbulb"></i> <span> Proyectos
+                                        </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="../ideas/listIdea.html"> Ideas </a></li>
+                                        <li><a href="../proyectos/listProyectos.html"> Proyectos </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"> <i class="fas fa-user-tie"></i></i> <span>Aliados
+                                        </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="../aliados/listAliados.html"> Aliados </a></li>
+                                        <li><a href="../lineas/listLineas.html"> Lineas </a></li>
+                                    </ul>
+                                </li>
+                                <li class="submenu"> <a href="#"><i class="fas fa-cog"></i></i></i>
+                                        <span>Configuraciones
+                                        </span> <span class="menu-arrow"></span></a>
+                                    <ul class="submenu_class" style="display: none;">
+                                        <li><a href="../tipo_documento/listDocu.html"> Tipo documento </a></li>
+
+                                    </ul>
+                                </li>
+                            </ul>
                         </div>
-                        <!-- Button trigger modal -->
-    
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Seleccione</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
-          <h6>¿El usuario a crear ya se encuentra con datos personales registrados?</h6>
-        </div>
-        <div class="modal-footer">
-            <a  href="createUser.html" type="button" class="btn btn" style="height: 50%; background-color: #449B23;  color: #fff" >Si</a>
-          <a  href="CrearPersona.html" type="button" class="btn btn-dark"  >No</a>
-        </div>
-      </div>
-    </div>
-  </div>
-                    <!-- Vertically centered modal -->
+                    </div>
+                </div>
+                <!-- fin nav izquierdo -->
+                <br><br><br>
+                <div class="container-fluid" id="listarUsuarios">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+                                <h1>Lista de usuarios</h1>
 
-                    <!-- tabla -->
-                <div class="card-body">
-                    <table id="listarRegistros" class="table table-striped" style="width:100%">
-                        <thead style="background-color: #449B23; color: #fff">
-                            <tr>
-                                <th># Usuario</th>
-                                <th>Correo</th>
-                                <th>Verificado</th>
-                                <th>Administrador</th>
-                                <th>Fecha Creaciont</th>
-                                <th>Fecha Actualizacion</th>
-                                <th>Fecha Eliminacion</th>
-                                <th># Persona</th>
-                                <th>Aliado</th>
-                                <th>Estado</th>
-                                <th>Acciones</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Daniel104@hotmail.com</td>
-                                <td>0</td>
-                                <td>true</td>
-                                <td>2011/04/25</td>
-                                <td>2011/04/25</td>
-                                <td> </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>Activo</td>
+                                <a href="createUser.html" class="btn btn " data-toggle="modal"
+                                    data-target="#exampleModal"
+                                    style="height: 50%; background-color: #449B23;  color: #fff">Nuevo Usuario</a>
 
-                            
-                           <td><a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                     <a  href="editUser.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
-                            </tr> 
-                            <tr>
-                                <td>2</td>
-                                <td>Carlos432@gmail.com</td>
-                                <td>0</td>
-                                <td>true</td>
-                                <td>2011/04/25</td>
-                                <td>2011/04/25</td>
-                                <td> </td>
-                                <td>1</td>
-                                <td>3</td>
-                                <td>Activo</td>
-                                <td><a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                    <a  href="editUser.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
-                            </tr>
-                        </tbody>
-                    </table>
+                            </div>
+                            <!-- Button trigger modal -->
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleccione</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6>¿El usuario a crear ya se encuentra con datos personales registrados?
+                                            </h6>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="createUser.html" type="button" class="btn btn"
+                                                style="height: 50%; background-color: #449B23;  color: #fff">Si</a>
+                                            <a href="CrearPersona.html" type="button" class="btn btn-dark">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Vertically centered modal -->
+
+                            <!-- tabla -->
+                            <div class="card-body">
+                                <table id="listarRegistros" class="table table-striped" style="width:100%">
+                                    <thead style="background-color: #449B23; color: #fff">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nombres</th>
+                                            <th>Documento</th>
+                                            <th>Correo</th>
+                                            <th>Rol</th>
+                                            <th>Aliado</th>
+                                            <th>Estado</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template v-for="usuario in usuarios">
+                                            <tr>
+                                                <td> {{usuario.identificador}}</td>
+                                                <td> {{usuario.correo}}</td>
+                                                <td> {{usuario.esVerificado}}</td>
+                                                <td> {{usuario.esAdministrador}}</td>
+                                                <td> {{usuario.persona}}</td>
+                                                <td> {{usuario.aliado}}</td>
+                                                <td> {{usuario.estado}}</td>
+                                                <td><a href="editUser.html" class="fas fa-edit text-green-500 "
+                                                        style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
+                                                        <a href="editUser.html" class="far fa-trash-alt   text-red-500"
+                                                            style="color:rgb(255, 0, 0);"><a class="ml-3"></a>
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+
+    <!-- instancia de vue -->
+    <script>
+
+        const app = new Vue({
+            el: '#listarUsuarios',
+
+            data() {
+                return {
+                    rutaBackend: 'http://localhost/redaliados/backend/public/',
+                    usuarios: []
+                }
+            },
+
+            mounted() {
+                this.getUsuarios()
+            },
+
+            methods: {
+                async getUsuarios() {
+                    const res = await fetch(`${this.rutaBackend}usuarios`, {
+                        method: "GET",
+                        headers: {
+                            'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxNiIsImp0aSI6IjY4OWFmNjg1NGRkYWMzY2JkNzM2ZjdlNWFmYzkwZjE0NDRkMzU4MDI2Y2RlZTAwNGFlMmZlMzZjMjhiYjEyOGU5YThmNDVhNDQ1YjE4NzdjIiwiaWF0IjoxNjY0OTc5ODY5Ljk4NTY3NCwibmJmIjoxNjY0OTc5ODY5Ljk4NTY3OSwiZXhwIjoxNjY0OTgwNDY5Ljk2ODM2Mywic3ViIjoiMiIsInNjb3BlcyI6W119.wxHiKAm_TCnsIeYB7lWOfBD5DxDsO_2s54kIdRdAiwq2_yeKIPbN3Mks_5b2LACbdh41iN3IHhXFkAiqzjNTw1u3CqRpadObsvtqOp0PXqbxcVoZxBDicb7-d0Bhd255nfzrUgJqUrhhFT7ae3Cz--ZFQ8iFSoXaRG0mFA1R10_9rsqI6CHfOW0HI3Wny-cX1IQEupGyCeUAGbx7nERLuqwXwk2HQLqLqlsIh6YgoUqeDvl-6r7pHeumyxOLWkNeIR8oikspH3PsfMMihuwVKKKqEHGjFWVjSclCqYXVRbwjAVuiggvZ0JL3o12QcA6PXwPpKHuLne2zqyKz0fr8F0oB7MqzjrN9CC7Cc8cqyLkusViKbdyVF9FOzD9iZbLXsvfp9nBY4gFHi6BbmAxQz8n0zqlrdzkKqz-_PKm9UXPUCx7wqWAtxwm0OavefENSreOaQrhf1c9NdV4MPP4YeJw09qTqeOJJsBhbPu8jhqemE2kkyAMNXu9iekoEbLBHnSETkApgGxkw2vaPIuPqmnWq__Ni1Pa3b3FO96hlq5HpmePfFgFtZRDujvig609eIBnUW-x6Cyl5ZlajzTOMo3ICTiNciDosg10vV3ufWx4KSNUdUE8mLFoxsikAljd-6NgTOvC6D97XsZhYk-_YhLfTmcB7YhDsluxARNetZEo'
+                        }
+                    })
+                    const data = await res.json()
+                    this.usuarios = data.data
+                    console.log(data.data);
+                }
+            }
+
+        })
+
+
+    </script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="../../lib/js/script.js"></script>
 
     <!--  datatables -->
     <script src="https://cdn.datatables.net/1.11.3/js/jquery.dataTables.min.js"></script>
-    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script> 
+    <script src="https://cdn.datatables.net/1.11.3/js/dataTables.bootstrap5.min.js"></script>
+
     <!-- Bootstrap core JavaScript -->
     <script src="../vendor/jquery/jquery.min.js"></script>
     <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
     <!-- Core plugin JavaScript-->
     <script src="../Layout/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    
     <!-- Custom scripts for all pages-->
     <script src="../../lib/js/datatables.min.js"></script>
-    <script src="../../lib/js/datatables.js"></script>  
+    <script src="../../lib/js/datatables.js"></script>
     <script src="../../js/listAdmin.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
 </body>
