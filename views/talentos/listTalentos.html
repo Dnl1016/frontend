@@ -12,6 +12,8 @@
      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="../../lib/css/datatables.min.css" rel="stylesheet">
+
+
 </head>
 <body>
     <div class="main-wrapper">
@@ -110,9 +112,38 @@
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
                             <h1>Lista de Talentos</h1>
-                            <a href="createTalento.html" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo talento</a>
-                        </div>
-                    </div>
+                            <a href="createUser.html" class="btn btn " data-toggle="modal"
+                                    data-target="#exampleModal"
+                                    style="height: 50%; background-color: #449B23;  color: #fff">Nuevo Talento</a>
+
+                            </div>
+                            <!-- Button trigger modal -->
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleccione</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6>¿El talento a crear tiene un natural o juridica?</h6>
+                                            
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="createTalento.html" type="button" class="btn btn"
+                                                style="height: 50%; background-color: #449B23;  color: #fff">Natural</a>
+                                            <a href="CreateTalentEmpresa.html" type="button" class="btn btn-dark">Juridica</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Vertically centered modal -->
                 <div class="card-body">
                     <table id="listarRegistros" class="table table-striped" style="width:100%">
                         <thead style="background-color: #449B23; color: #fff">
@@ -124,17 +155,7 @@
                                 <th>Descripcion Producto</th>
                                 <th>Convocatoria</th>
                                 <th>Estado</th>
-                                <th>Acciones</th>
-                                <!-- "identificador" => (int)$talento->id,
-            'cargo' => (string)$talento->jobTittle,
-            'nombreNegocio' => (string)$talento->businessName,
-            'registroIndustrial'=>(string)$talento->indrustyRegistration,
-            'tipoTalento'=> (string)$talento->typeTalent,
-            'nivelEducacion' =>(string)$talento->educationalLevel,
-            'descripcionProducto' => (string)$talento->productDescription,
-            'fechaEliminacion' => isset($talento->deleted_at) ? (string) $talento->deleted_at : null,
-            'convocatoria' => (string)$talento->announcement,
-            'persona' => (int)$talento->people_id, --> 
+                                <th style="text-align: right; padding-right: 2%;" >Acciones</th> 
                             </tr>
                         </thead>
                         <tbody>
@@ -146,7 +167,14 @@
                                 <td>Alitas cocinadas con muy finas hierbas de cannabis</td>
                                 <td>No</td>
                                 <td>Activo</td>
-                                <td><i class="fas fa-edit text-green-500 "></i><a href="#" class="mr-3 ml-3"></a> <i class="far fa-trash-alt   text-red-500"></i><a href="#" class="ml-3"></a></td>
+                                <td>
+
+                                    <div class="custom-control custom-switch " class="">
+                                        <a  href="editPersona.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                        <input type="checkbox" class="custom-control-input "
+                                         id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
+                                </td>   
                             </tr>
 
                         </tbody>
@@ -170,4 +198,11 @@
     <script src="../../lib/js/datatables.min.js"></script>
     <script src="../../lib/js/datatables.js"></script>  
     <script src="../../js/listAdmin.js"></script>
+
+    <!-- modal -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+    crossorigin="anonymous"></script>
 </body>
+
+
