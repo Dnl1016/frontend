@@ -106,7 +106,7 @@
             </div>
             <!-- fin nav izquierdo -->		
 			<br><br><br>
-            <div class="container-fluid">
+            <div class="container-fluid" id="listarDocu">
                 <div class="card">
                     <div class="card-header">
                         <div class="d-flex justify-content-between">
@@ -134,27 +134,38 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td style="text-align:center;">Cedula de ciudadania</td>
-                              
-
-                            
-                           <td ><a  href="editDocu.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                     <a  href="editDocu.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
-                            </tr> 
-                            <tr>
-                                <td>2</td>
-                                <td style="text-align:center;">Cedula de extranjeria</td>
+                            <template v-for="tipoDocume in tiposDocumentos">
+                                <tr>
+                                    <td> {{usuario.identificador}}</td>
+                                    <td> {{usuario.correo}}</td>
+                                    <td> {{usuario.esVerificado}}</td>
+                                    <td> {{usuario.esAdministrador}}</td>
+                                    <td> {{usuario.persona}}</td>
+                                    <td> {{usuario.aliado}}</td>
+                                    <td> {{usuario.estado}}</td>
+                                    <td><div class="custom-control custom-switch " class="">
+                                        <a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                        <input type="checkbox" class="custom-control-input "
+                                         id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
                                 
-                                <td ><a  href="editDocu.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-3 ml-3"></a>
-                                    <a  href="editDocu.html" class="far fa-trash-alt   text-red-500" style="color:rgb(255, 0, 0);"><a  class="ml-3"></a></td> 
-                            </tr>
+                                    </td>
+                                </tr>
+                            </template>
                         </tbody>
                     </table>
-                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+    <!-- vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.13/dist/vue.js"></script>
+
+    <!-- lista -->
+    <script src="list.js"> </script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
     <script src="../../lib/plugins/slimscroll/jquery.slimscroll.min.js"></script>
     <script src="../../lib/js/script.js"></script>
