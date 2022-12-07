@@ -1,23 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Red Aliados</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="../assets/">
-    <link rel="stylesheet" href="../css/styilesNav.css">
-    <link rel="stylesheet" href="">
-    <script src="https://kit.fontawesome.com/b6028d284b.js" crossorigin="anonymous"></script> -->
-</head>
+<%- include("../template/head", {tituloweb: 'Red aliados'}); %>
 <style>
   .navbar {
     display: flex;
@@ -95,7 +76,7 @@
 
   .fondo {
     background-color: aliceblue;
-    background-image: url("../../lib/img/fondol.png");
+    background-image: url("/img/fondol.png");
 
 
   }
@@ -143,12 +124,12 @@
       <div>
         <a class="navbar menu" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
           aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-          <img src="../../lib/img/logo v2.png" width="10%" alt="">
+          <img src="/img/logo v2.png" width="10%" alt="">
         </a>
       </div>
     </div>
     <div class="container p" style="justify-content:stretch;">
-      <a class="nav-link active t" aria-current="page" href="../home.html" style="margin-left:1rem;">HOME</a>
+      <a class="nav-link active t" aria-current="page" href="/" style="margin-left:1rem;">HOME</a>
       <a class="nav-link t" href="#" style="margin-left:1rem ; ">SERVICIOS</a>
       <a class="nav-link t" href="#" style="margin-left:1rem ;">CONTACTENOS</a>
     </div>
@@ -186,7 +167,7 @@
         <div class="mb-2 py-2 ">
 
           <button type="submit" class="btn btn boton-form">
-            <a style="text-decoration:none ; color: aliceblue;" href="../admin/menuAdmin.html">Iniciar sesión</a> </button>
+            <a style="text-decoration:none ; color: aliceblue;" href="/admin/menuAdmin">Iniciar sesión</a> </button>
 
         </div>
       </form>
@@ -215,46 +196,5 @@
     crossorigin="anonymous"></script>
   <!-- <script src="http://red-aliados.herokuapp.com/js/main/signup.js"></script> -->
 </body>
-<footer class="text-center footer-style">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4 footer-col redes">
-        <h6>Redes sociales</h6>
-        <img src="../../lib/img/facebook.png" width="6%" alt="">
-        <img src="../../lib/img/instagram.png" width="6%" alt="">
-        <img src="../../lib/img/twitter.png" width="6%" alt="">
-      </div>
-      <div class="col-md-4 footer-col-1 py-4">
-        <h5>CONTACTENOS</h5>
-        <ul class="list-inline">
-          <li class="">
-            <a>
-              <i class="material-icons ">location_on</i>
-              Calle 45E #36-59 Medellín
-            </a>
-
-          </li>
-          <a style="left: 100%;">
-            <i class="material-icons">local_phone</i>
-            313 4522401
-          </a>
-
-          <li>
-            <a>
-              <i class="material-icons">email</i>
-              correosena@misena.edu.co
-            </a>
-          </li>
-
-        </ul>
-      </div>
-      <div class="col-md-4 footer-col py-4">
-        <h5>HORARIO:</h5>
-
-        <p class="py-2">Lunes - Sábado: 6 am - 10 pm</p>
-        <p>Domingo: CERRADO</p>
-      </div>
-    </div>
-  </div>
-</footer>
+<%- include("../template/footer") %>
 </html>
