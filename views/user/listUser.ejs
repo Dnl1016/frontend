@@ -1,0 +1,100 @@
+<!-- inicio cabecera -->
+<%- include("../template/head", {tituloweb: 'Red aliados'}); %>
+<!-- fin cabecera -->
+<body>
+   <!-- navbar superior -->
+   <%- include("../template/navbar") %>
+   <!-- fin navbar -->
+   <!-- siderbar o nav izquierdo -->
+   <%- include("../template/siderbar") %>
+<!-- fin de sidebar o nav izquierdo -->
+<!-- inicio de el contenido -->
+                <br><br><br>
+                <div class="container-fluid" id="listarUsuarios">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+                                <h1 class="display-4">Lista de usuarios</h1>
+
+                                <a href="createUser.html" class="btn btn " data-toggle="modal"
+                                    data-target="#exampleModal"
+                                    style="height: 50%; background-color: #449B23;  color: #fff">Nuevo Usuario</a>
+
+                            </div>
+                            <!-- Button trigger modal -->
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLabel">Seleccione</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h6>¿El usuario a crear ya se encuentra con datos personales registrados?
+                                            </h6>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <a href="createUser.html" type="button" class="btn btn"
+                                                style="height: 50%; background-color: #449B23;  color: #fff">Si</a>
+                                            <a href="CrearPersona.html" type="button" class="btn btn-dark">No</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Vertically centered modal -->
+
+                            <!-- tabla -->
+                            <div class="card-body">
+                                <table id="listarRegistros" class="table table-striped" style="width:100%">
+                                    <thead style="background-color: #449B23; color: #fff">
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Nombres</th>
+                                            <th>Documento</th>
+                                            <th>Correo</th>
+                                            <th>Rol</th>
+                                            <th>Aliado</th>
+                                            <th>Estado</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template v-for="usuario in usuarios">
+                                            <tr>
+                                                <td> {{usuario.identificador}}</td>
+                                                <td> {{usuario.correo}}</td>
+                                                <td> {{usuario.esVerificado}}</td>
+                                                <td> {{usuario.esAdministrador}}</td>
+                                                <td> {{usuario.persona}}</td>
+                                                <td> {{usuario.aliado}}</td>
+                                                <td> {{usuario.estado}}</td>
+                                                <td><div class="custom-control custom-switch " class="">
+                                                    <a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                                    <input type="checkbox" class="custom-control-input "
+                                                     id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
+                                                </div>
+                                            
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- fin contenido --> 
+<!-- inicio scripts -->
+    <%- include("../template/script") %>
+<!-- fin scripts -->
+</body>
+</html>

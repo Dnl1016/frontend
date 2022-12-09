@@ -13,5 +13,9 @@ router.get('/admin/menuAdmin',(req, res)=>{
     res.render("admin/menuAdmin",)
 })
 
+router.get('/usuarios',(req, res)=>{
+    res.render("user/listUser",)
+})
+
 
 module.exports=router;
