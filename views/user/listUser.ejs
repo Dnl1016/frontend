@@ -1,14 +1,15 @@
 <!-- inicio cabecera -->
-<%- include("../template/head", {tituloweb: 'Red aliados'}); %>
-<!-- fin cabecera -->
-<body>
-   <!-- navbar superior -->
-   <%- include("../template/navbar") %>
-   <!-- fin navbar -->
-   <!-- siderbar o nav izquierdo -->
-   <%- include("../template/siderbar") %>
-<!-- fin de sidebar o nav izquierdo -->
-<!-- inicio de el contenido -->
+<%- include("../template/head", {tituloweb: 'Red aliados' }); %>
+    <!-- fin cabecera -->
+
+    <body>
+        <!-- navbar superior -->
+        <%- include("../template/navbar") %>
+            <!-- fin navbar -->
+            <!-- siderbar o nav izquierdo -->
+            <%- include("../template/siderbar") %>
+                <!-- fin de sidebar o nav izquierdo -->
+                <!-- inicio de el contenido -->
                 <br><br><br>
                 <div class="container-fluid" id="listarUsuarios">
                     <div class="card">
@@ -16,7 +17,7 @@
                             <div class="d-flex justify-content-between">
                                 <h1 class="display-4">Lista de usuarios</h1>
 
-                                <a href="createUser.html" class="btn btn " data-toggle="modal"
+                                <a href='/usuario/create' class="btn btn " data-toggle="modal"
                                     data-target="#exampleModal"
                                     style="height: 50%; background-color: #449B23;  color: #fff">Nuevo Usuario</a>
 
@@ -40,9 +41,9 @@
                                             </h6>
                                         </div>
                                         <div class="modal-footer">
-                                            <a href="createUser.html" type="button" class="btn btn"
+                                            <a href='/usuario/create' type="button" class="btn btn"
                                                 style="height: 50%; background-color: #449B23;  color: #fff">Si</a>
-                                            <a href="CrearPersona.html" type="button" class="btn btn-dark">No</a>
+                                            <a href="/usuario/createPerso" type="button" class="btn btn-dark">No</a>
                                         </div>
                                     </div>
                                 </div>
@@ -74,12 +75,15 @@
                                                 <td> {{usuario.persona}}</td>
                                                 <td> {{usuario.aliado}}</td>
                                                 <td> {{usuario.estado}}</td>
-                                                <td><div class="custom-control custom-switch " class="">
-                                                    <a  href="editUser.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
-                                                    <input type="checkbox" class="custom-control-input "
-                                                     id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
-                                                </div>
-                                            
+                                                <td>
+                                                    <div class="custom-control custom-switch " class="">
+                                                        <a href="/usuario/" class="fas fa-edit text-green-500 "
+                                                            style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                                            <input type="checkbox" class="custom-control-input "
+                                                                id="customSwitch1"><label class="custom-control-label"
+                                                                for="customSwitch1"></label>
+                                                    </div>
+
                                                 </td>
                                             </tr>
                                         </template>
@@ -89,12 +93,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-<!-- fin contenido --> 
-<!-- inicio scripts -->
-    <%- include("../template/script") %>
-<!-- fin scripts -->
-</body>
-</html>
+                </div>
+                </div>
+                </div>
+                <!-- fin contenido -->
+                <!-- inicio scripts -->
+                <script src="list.js"></script>
+                <%- include("../template/script") %>
+                    <!-- fin scripts -->
+    </body>
+
+    </html>
