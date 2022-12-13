@@ -79,19 +79,6 @@ router.get('/rol/create',(req, res)=>{
 })
 
 
-// roles
-router.get('/roles',(req, res)=>{
-    res.render("roles/listRoles",)
-})
-
-router.get('/rol/edit',(req, res)=>{
-    res.render("roles/editRol",)
-})
-
-router.get('/rol/create',(req, res)=>{
-    res.render("roles/createRol",)
-})
-
 // proyectos
 router.get('/proyectos',(req, res)=>{
     res.render("proyectos/listProyectos",)
@@ -131,6 +118,64 @@ router.get('/permiso/edit',(req, res)=>{
 router.get('/permisos/create',(req, res)=>{
     res.render("permisos/createPermiso",)
 })
+
+// lineas
+router.get('/lineas',(req, res)=>{
+    res.render("lineas/listLineas",)
+})
+
+router.get('/linea/edit',(req, res)=>{
+    res.render("lineas/editLineas",)
+})
+
+router.get('/linea/create',(req, res)=>{
+    res.render("lineas/createLineas",)
+})
+
+// ideas
+router.get('/ideas',(req, res)=>{
+    res.render("ideas/listIdea",)
+})
+
+router.get('/idea/edit',(req, res)=>{
+    res.render("ideas/editIdeas",)
+})
+
+router.get('/idea/create',(req, res)=>{
+    res.render("ideas/createIdeas",)
+})
+
+
+// empresas
+router.get('/empresas',(req, res)=>{
+    res.render("empresas/listEmpresas",)
+})
+
+router.get('/empresa/edit',(req, res)=>{
+    res.render("empresas/editEmpresa",)
+})
+
+router.get('/empresa/create',(req, res)=>{
+    res.render("empresa/createEmpresa",)
+})
+
+
+
+// aliados
+router.get('/aliados',(req, res)=>{
+    res.render("aliados/listAliados",)
+})
+
+router.get('/aliado/edit',(req, res)=>{
+    res.render("aliados/editAliado",)
+})
+
+router.get('/aliado/create',(req, res)=>{
+    res.render("aliados/createAliado",)
+})
+
+
+
 
 
 
