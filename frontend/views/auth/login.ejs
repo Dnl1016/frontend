@@ -1,0 +1,200 @@
+<%- include("../template/head", {tituloweb: 'Red aliados'}); %>
+<style>
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: aliceblue;
+
+  }
+
+  .menu_1 {
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.548);
+  }
+
+  .botones {
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.401);
+
+  }
+
+  .d {
+    width: 30%;
+
+  }
+
+  .menu {
+    margin-left: 5%;
+  }
+
+  .p {
+    padding-left: 10%;
+  }
+
+  .t {
+    font-size: x-large;
+  }
+
+  .icon {
+
+    padding-left: 95%;
+  }
+
+  .footer-style {
+    padding-top: 20px;
+    background-color: #449B23;
+  }
+
+  footer {
+    color: white;
+  }
+
+  footer h3 {
+
+    margin-bottom: 30px;
+
+  }
+
+  footer .footer-above {
+    padding-top: 50px;
+    background-color: #2C3E50;
+  }
+
+  footer .footer-col {
+
+    margin-bottom: 40px;
+  }
+
+  footer .footer-below {
+    padding: 25px 0;
+    background-color: #233140;
+  }
+
+  .redes {
+    padding-top: 12%;
+
+  }
+
+  .fondo {
+    background-color: aliceblue;
+    background-image: url("/img/fondol.png");
+
+
+  }
+
+  .fondo_img {
+    width: 100%;
+
+  }
+
+  .login {
+    padding: 5%;
+
+    box-shadow: 3px 3px 8px 2px rgba(0, 0, 0, 0.401);
+    border-radius: 8%;
+    background-color: rgb(254, 254, 254);
+    width: 40%;
+
+  }
+
+  .titulo {
+    text-align: center;
+    color: #449B23;
+    padding-bottom: 2%;
+
+  }
+
+  .boton-form {
+
+
+    background-color: #449B23;
+    margin-left: 28%;
+    color: aliceblue;
+    justify-content: center;
+    width: 45%;
+  }
+
+  .boton-form:hover {
+
+    background-color: #393939;
+  }
+</style>
+<body>
+  <nav class="navbar menu_1" style="background-color:#449B23;">
+    <div class="container py-3 d">
+      <div>
+        <a class="navbar menu" type="submit" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent"
+          aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <img src="/img/logo v2.png" width="10%" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="container p" style="justify-content:stretch;">
+      <a class="nav-link active t" aria-current="page" href="/" style="margin-left:1rem;">HOME</a>
+      <a class="nav-link t" href="#" style="margin-left:1rem ; ">SERVICIOS</a>
+      <a class="nav-link t" href="#" style="margin-left:1rem ;">CONTACTENOS</a>
+    </div>
+    <!-- 
+ <div  class="container icon " style="justify-content: end; ">
+  
+<a class="nav-link active " aria-current="page" href="../views/auth/login.html" type="submit" style="margin-left:1rem ;  margin-top: -35px;">
+  <i class="material-icons"  style="font-size:50px;  margin-top: -35px;  ">account_circle</i>
+ 
+</a>
+ <ul class="dropdown-menu" style="margin-left: 1650px;" >
+  <li><a class="dropdown-item" href="#">Action</a></li>
+  <li><a class="dropdown-item" href="#">Another action</a></li>
+  <li><a class="dropdown-item" href="#">Something else here</a></li>
+</ul> 
+ </div>  -->
+  </nav>
+  <div class="container fondo">
+    <br>
+    <br>
+    <br>
+    <br><br>
+    <div class="container login">
+      <form>
+        <div class="mb-3 ">
+          <h3 class="titulo">BIENVENIDO</h3>
+          <label for="exampleInputEmail1" class="form-label">CORREO ELECTRONICO</label>
+          <input type="email" class="form-control campos" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">CONTRASEÑA</label>
+          <input type="password" class="form-control campos" id="exampleInputPassword1">
+        </div>
+        <div class="mb-2 py-2 ">
+
+          <button type="submit" class="btn btn boton-form">
+            <a style="text-decoration:none ; color: aliceblue;" href="/admin/menuAdmin">Iniciar sesión</a> </button>
+
+        </div>
+      </form>
+    </div>
+    <br><br><br> <br><br><br><br><br><br> <br>
+  </div>
+  </div>
+
+
+  <script>
+    const btn = document.querySelector("button.mobile-menu-button");
+    const btnimg = document.querySelector("svg.imagensita");
+    const menu = document.querySelector(".mobile-menu");
+
+    btn.addEventListener("mouseenter", () => {
+      btnimg.classList.add('hover:text-red-500');
+      btnimg.classList.add('transitionnnn');
+    });
+
+    btn.addEventListener("click", () => {
+      menu.classList.toggle("hidden");
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <!-- <script src="http://red-aliados.herokuapp.com/js/main/signup.js"></script> -->
+</body>
+<%- include("../template/footer") %>
+</html>

@@ -1,0 +1,81 @@
+<%- include("../template/head", {tituloweb: 'Red aliados' }); %>
+    <!-- fin cabecera -->
+
+    <body>
+        <!-- navbar superior -->
+        <%- include("../template/navbar") %>
+            <!-- fin navbar -->
+            <!-- siderbar o nav izquierdo -->
+            <%- include("../template/siderbar") %>
+                <!-- fin de sidebar o nav izquierdo -->
+                <!-- inicio de el contenido -->
+			<br><br><br>
+            <div class="container-fluid">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="d-flex justify-content-between">
+                            <h1 class="display-4" >Lista de personas</h1>
+                            <a href="" style="height: 50%; background-color: #449B23;  color: #fff"  class="btn btn" >Nuevo Persona</a>
+                        </div>
+                    </div>
+                <div class="card-body">
+                    <table id="listarRegistros" class="table table-striped" style="width:100%">
+                        <thead style="background-color: #449B23; color: #fff">
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre</th>
+                                <th>Correo</th>
+                                <th>Tipo de documento</th>
+                                <th>Documento</th>
+                                <th>Telefono</th>
+                                
+                                <th style="text-align: right; padding-right: 4%;">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Daniel David</td>
+                                <td>Daniel104@hotmail.com</td>
+                                <td>Cedula</td>
+                                <td>100086908</td>
+                                <td>3297893456</td>
+                                <td>
+                                    <div class="custom-control custom-switch ">
+                                        <a  href="editPersona.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                        <input type="checkbox" class="custom-control-input "
+                                         id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
+                                </td>   
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>juan Carlos pinzon</td>
+                                <td>carlos104@hotmail.com</td>
+                                <td>Cedula</td>
+                                <td>1000878988</td>
+                                <td>3297893542</td>
+                                <td>
+                                   
+
+                                    <div class="custom-control custom-switch ">
+                                        <a  href="editPersona.html" class="fas fa-edit text-green-500 " style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                        <input type="checkbox" class="custom-control-input "
+                                         id="customSwitch1"><label class="custom-control-label" for="customSwitch1"></label>
+                                    </div>
+                                </td>   
+                                  
+                            </tr>
+                        </tbody>
+                    </table>
+                    </div>
+                </div>
+            </div>
+                 <!-- fin contenido -->
+                    <!-- inicio scripts -->
+                    <script src="list.js"></script>
+                    <%- include("../template/script") %>
+                        <!-- fin scripts -->
+    </body>
+
+    </html>

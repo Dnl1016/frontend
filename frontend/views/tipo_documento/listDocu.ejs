@@ -1,0 +1,79 @@
+<%- include("../template/head", {tituloweb: 'Red aliados' }); %>
+    <!-- fin cabecera -->
+
+    <body>
+        <!-- navbar superior -->
+        <%- include("../template/navbar") %>
+            <!-- fin navbar -->
+            <!-- siderbar o nav izquierdo -->
+            <%- include("../template/siderbar") %>
+                <!-- fin de sidebar o nav izquierdo -->
+                <!-- inicio de el contenido -->
+                <br><br><br>
+                <div class="container-fluid" id="listarDocu">
+                    <div class="card">
+                        <div class="card-header">
+                            <div class="d-flex justify-content-between">
+                                <h2>Tipo de documentos</h2>
+                                <a href="/tipodocumento/create" style="height: 50%; background-color: #449B23;  color: #fff"
+                                    class="btn btn">Nuevo </a>
+
+                            </div>
+                            <!-- Button trigger modal -->
+
+
+
+                            <!-- Vertically centered modal -->
+
+                            <!-- tabla -->
+                            <div class="card-body">
+                                <table id="listarRegistros" class="table table-striped" style="width:100%">
+                                    <thead style="background-color: #449B23; color: #fff">
+                                        <tr>
+                                            <th># </th>
+                                            <th style="text-align:center;">Tipo de documento</th>
+
+                                            <th>Acciones</th>
+
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <template v-for="tipoDocume in tiposDocumentos">
+                                            <tr>
+                                                <td> {{usuario.identificador}}</td>
+                                                <td> {{usuario.correo}}</td>
+                                                <td> {{usuario.esVerificado}}</td>
+                                                <td> {{usuario.esAdministrador}}</td>
+                                                <td> {{usuario.persona}}</td>
+                                                <td> {{usuario.aliado}}</td>
+                                                <td> {{usuario.estado}}</td>
+                                                <td>
+                                                    <div class="custom-control custom-switch " class="">
+                                                        <a href="/tipodocumento/edit" class="fas fa-edit text-green-500 "
+                                                            style="color:rgb(255, 126, 27);"><a class="mr-6 ml-5"></a>
+                                                            <input type="checkbox" class="custom-control-input "
+                                                                id="customSwitch1"><label class="custom-control-label"
+                                                                for="customSwitch1"></label>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </template>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
+                </div>
+                </div>
+                <!-- fin contenido -->
+                <!-- inicio scripts -->
+                <script src="list.js"></script>
+                <%- include("../template/script") %>
+                    <!-- fin scripts -->
+    </body>
+
+    </html>
