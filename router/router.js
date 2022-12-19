@@ -13,6 +13,10 @@ router.get('/admin/menuAdmin',(req, res)=>{
     res.render("admin/menuAdmin",)
 })
 
+router.get('/postulate',(req, res)=>{
+    res.render("postulate",)
+})
+
 // usuarios
 router.get('/usuarios',(req, res)=>{
     res.render("user/listUser",)

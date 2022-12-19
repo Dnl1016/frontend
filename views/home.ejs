@@ -1,31 +1,18 @@
+<!-- inicio cabecera -->
 <%- include("./template/head", {tituloweb: 'Red aliados'}); %>
+ <!-- fin cabecera -->
 
   <body>
-    <nav class="navbar menu_1" style="background-color:#449B23;">
-      <div class="container py-3 d">
-        <div>
-          <img src="/img/logo v2.png" width="10%" alt="">
-        </div>
-
-      </div>
-      <div class="container p" style="justify-content:stretch;">
-        <a class="nav-link active t" aria-current="page" href="home.html" style="margin-left:1rem;">HOME</a>
-        <a class="nav-link t" href="#" style="margin-left:1rem ; ">SERVICIOS</a>
-        <a class="nav-link t" href="#" style="margin-left:1rem ;">CONTACTENOS</a>
-      </div>
-      <div class="container icon " style="justify-content: end; ">
-        <a class="nav-link active " aria-current="page" href="/auth/login" type="submit"
-          style="margin-left:1rem ;  margin-top: -35px;">
-          <i class="material-icons" style="font-size:50px;  margin-top: -35px;  ">account_circle</i>
-        </a>
-      </div>
-
-
-    </nav>
+    <!-- navbar superior -->
+    <%- include("./template/navHome") %>
+    <!-- fin navbar -->
+        <!-- inicio de el contenido -->
+   
     <div class="mt-5">
       <div class="grid grid-cols-4 " style="display: flex;">
         <div class=" ">
-          <img class="w-full" src="/img/baner.png" style="margin-left: 70px; margin-top: 50px;">
+          <img class="" src="/img/baner.png">
+          <!-- <img class="w-full" src="/img/baner.png" style="margin-left: 70px; margin-top: 50px; "> -->
 
         </div>
         <div class="grid grid-col-4 col-span-4 lg:col-span-2  items-center  xl:ml-40">
@@ -46,9 +33,9 @@
               tenetur cumque earum ratione?</p>
           </div>
           <div class="col-span-4 text-center lg:text-left">
-            <button
+            <button><a href="postulate"
               class="bg-yellow-z text-light font-mono rounded-full w-40 h-10 mr-8 ml-5 hover:bg-yellow-600 botones"
-              style="background-color: #449B23;border-radius:10px; border-color: #449B23; padding:  15px 45px; font-size: 25px; ">¡Postularme!</button></a>
+              style="background-color: #449B23;border-radius:10px; border-color: #449B23; padding:  15px 45px; font-size: 25px; ">¡Postularme!</a></button></a>
           </div>
         </div>
       </div>
@@ -66,14 +53,18 @@
             tenetur cumque earum ratione?</p>
         </div>
         <div>
-          <img class="w-full" src="/img/baner.png">
+          <img class="" src="/img/baner.png">
         </div>
       </div>
     </div>
     </div>
     </div>
-    <%- include("template/script") %>
-  </body>
-  <%- include("template/footer") %>
-
+                <!-- fin contenido -->
+                <!-- inicio scripts -->
+                <%- include("./template/script") %>
+                    <!-- fin scripts -->
+    </body>
+    <!-- inicio footer -->
+    <%- include("./template/footer") %>
+    <!-- final footr -->
     </html>
