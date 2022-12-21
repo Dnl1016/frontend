@@ -1,31 +1,32 @@
-<!-- inicio cabecera -->
+<%#  inicio cabecera %>
 <%- include("../template/head", {tituloweb: 'Red aliados' }); %>
-    <!-- fin cabecera -->
+   <%# fin cabecera %>
 
     <body>
-        <!-- navbar superior -->
+        <%#  Inicio de navbar superrior %>
         <%- include("../template/navbar") %>
-            <!-- fin navbar -->
-            <!-- siderbar o nav izquierdo -->
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
             <%- include("../template/siderbar") %>
-                <!-- fin de sidebar o nav izquierdo -->
-                <!-- inicio de el contenido -->
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
                 <br><br><br>
                 <div class="container-fluid" id="listarUsuarios">
                     <div class="card">
                         <div class="card-header">
                             <div class="d-flex justify-content-between">
+                                <%# titulo  %>
                                 <h1 class="display-4">Lista de usuarios</h1>
-
+                                <%#Boton  de nuevo %>
                                 <a href='/usuario/create' class="btn btn " data-toggle="modal"
                                     data-target="#exampleModal"
-                                    style="height: 50%; background-color: #449B23;  color: #fff">Nuevo Usuario</a>
+                                    style="height: 50%; background-color: #449B23;  color: #fff">Usuario</a>
 
                             </div>
-                            <!-- Button trigger modal -->
+                            
 
 
-                            <!-- Modal -->
+                            <%# fin modal  %>
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -48,9 +49,9 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Vertically centered modal -->
+                            <%# fin Modal  %>
 
-                            <!-- tabla -->
+                            <%# Datatable  %>
                             <div class="card-body">
                                 <table id="listarRegistros" class="table table-striped" style="width:100%">
                                     <thead style="background-color: #449B23; color: #fff">
@@ -96,11 +97,11 @@
                 </div>
                 </div>
                 </div>
-                <!-- fin contenido -->
-                <!-- inicio scripts -->
-                <script src="list.js"></script>
+                <%# fin contenido  %>
+                <%# inicio scripts  %>
+                
                 <%- include("../template/script") %>
-                    <!-- fin scripts -->
+                <%# fin scripts  %>
     </body>
 
     </html>
