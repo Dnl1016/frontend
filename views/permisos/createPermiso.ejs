@@ -1,14 +1,15 @@
+<%#  inicio cabecera %>
 <%- include("../template/head", {tituloweb: 'Red aliados' }); %>
-    <!-- fin cabecera -->
+<%# fin cabecera %>
 
     <body>
-        <!-- navbar superior -->
+        <%#  Inicio de navbar superrior %>
         <%- include("../template/navbar") %>
-            <!-- fin navbar -->
-            <!-- siderbar o nav izquierdo -->
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
             <%- include("../template/siderbar") %>
-                <!-- fin de sidebar o nav izquierdo -->
-                <!-- inicio de el contenido -->
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
 			<div class="bg-gray-100 mx-auto max-w-6xl bg-white  px-12 lg:px-24 shadow-xl mb-14 mt-24">
 			<br>
 				<div class="sgForm">
@@ -67,11 +68,11 @@
 				</form>
 			
 		</div>
-                    <!-- fin contenido -->
-                    <!-- inicio scripts -->
-                    <script src="list.js"></script>
-                    <%- include("../template/script") %>
-                        <!-- fin scripts -->
+            	<%# fin contenido  %>
+                <%# inicio scripts  %>
+                
+                <%- include("../template/script") %>
+                <%# fin scripts  %>
     </body>
 
     </html>

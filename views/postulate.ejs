@@ -1,12 +1,12 @@
-<!-- inicio cabecera -->
+<%# inicio cabecera  %>
 <%- include("./template/head", {tituloweb: 'Red aliados'}); %>
- <!-- fin cabecera -->
+ <%# fin cabecera  %>
 
   <body>
-    <!-- navbar superior -->
+    <%# inicio nav superior %>
     <%- include("./template/navHome") %>
-    <!-- fin navbar -->
-        <!-- inicio de el contenido -->
+    <%# fin navbar %>
+        <%# inicio contenido  %>
                     
               <div class="bg-gray-100 mx-auto max-w-6xl bg-white py-20 px-12 lg:px-24 shadow-xl mb-24 mt-24">
                 <div class="w-80 mx-auto mb-10 text-center">
@@ -334,12 +334,12 @@
                     </form>
                 </div>            
             </div>
-                <!-- fin contenido -->
-                <!-- inicio scripts -->
+                <%# fin contenido %>
+                <%# inicio scripts  %>
                 <%- include("./template/script") %>
-                    <!-- fin scripts -->
+                   <%# fin scripts  %>
     </body>
-    <!-- inicio footer -->
+    <%# inicio footer  %>
     <%- include("./template/footer") %>
-    <!-- final footr -->
+    <%# finfooter  %>
     </html>

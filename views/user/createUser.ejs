@@ -1,15 +1,15 @@
-<!-- inicio cabecera -->
+<%#  inicio cabecera %>
 <%- include("../template/head", {tituloweb: 'Red aliados' }); %>
-	<!-- fin cabecera -->
+<%# fin cabecera %>
 
-	<body>
-		<!-- navbar superior -->
-		<%- include("../template/navbar") %>
-			<!-- fin navbar -->
-			<!-- siderbar o nav izquierdo -->
-			<%- include("../template/siderbar") %>
-				<!-- fin de sidebar o nav izquierdo -->
-				<!-- inicio de el contenido -->
+    <body>
+        <%#  Inicio de navbar superrior %>
+        <%- include("../template/navbar") %>
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
+            <%- include("../template/siderbar") %>
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
 				<div class="bg-gray-100 mx-auto max-w-6xl bg-white  px-12 lg:px-24 shadow-xl mb-14 mt-24">
 					<br>
 					<div class="sgForm">
@@ -29,7 +29,7 @@
 										</div>
 									</div>
 								</div>
-								<!-- Fin Multi selector -->
+								<%# fin multiselector  %>
 								<h1 class="text-black-600 text-4xl mb-4" style="color:#449B23; padding-top: -2%;">CREAR
 									CUENTA</h1>
 								<div class="-mx-3 md:flex mb-6">
@@ -129,15 +129,16 @@
 										</button>
 									</div>
 								</div>
-
+							</div>
 						</form>
-
 					</div>
-					<!-- fin contenido -->
-					<!-- inicio scripts -->
-					<%- include("../template/script") %>
-						<!-- fin scripts -->
+				</div>
+				
+ 		<%# fin contenido  %>
+        <%# inicio scripts  %>
+        
+        <%- include("../template/script") %>
+        <%# fin scripts  %>
+    </body>
 
-	</body>
-
-	</html>
+    </html>

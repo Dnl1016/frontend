@@ -1,14 +1,15 @@
-<%- include("../template/head", {tituloweb: 'Red aliados'}); %>
-<body>
-    <!-- navbar superior -->
-    <%- include("../template/navbar") %>
-            <!-- cabecera -->
-                
-            <!-- fin cabecera -->
-            <!-- nav izquierdo -->
+<%#  inicio cabecera %>
+<%- include("../template/head", {tituloweb: 'Red aliados' }); %>
+<%# fin cabecera %>
+
+    <body>
+        <%#  Inicio de navbar superrior %>
+        <%- include("../template/navbar") %>
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
             <%- include("../template/siderbar") %>
-<!-- fin de sidebar o nav izquierdo -->
-<!-- inicio de el contenido -->
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
                 <div class="page-header">
                     <div class="row">
                         <div class="col-sm-12 mt-5">
@@ -83,8 +84,10 @@
             </div>
         </div>
     </div>
-    <!-- fin del contenido -->
-    <%- include("../template/script") %>
-  
+     <%# fin contenido  %>
+                <%# inicio scripts  %>
+                
+                <%- include("../template/script") %>
+                <%# fin scripts  %>
 </body>
 </html>

@@ -1,18 +1,18 @@
-<!-- inicio cabecera -->
+ <%# inicio cabecera %>
 <%- include("./template/head", {tituloweb: 'Red aliados'}); %>
- <!-- fin cabecera -->
+ <%# fin cabecera  %>
 
   <body>
-    <!-- navbar superior -->
+    <%# inicio navbar superior %>
     <%- include("./template/navHome") %>
-    <!-- fin navbar -->
-        <!-- inicio de el contenido -->
+     <%# fin navbar %>
+         <%# inicio contenido  %>
    
     <div class="mt-5">
       <div class="grid grid-cols-4 " style="display: flex;">
         <div class=" ">
           <img class="" src="/img/baner.png">
-          <!-- <img class="w-full" src="/img/baner.png" style="margin-left: 70px; margin-top: 50px; "> -->
+        <%# <img class="w-full" src="/img/baner.png" style="margin-left: 70px; margin-top: 50px; ">   %>
 
         </div>
         <div class="grid grid-col-4 col-span-4 lg:col-span-2  items-center  xl:ml-40">
@@ -59,12 +59,14 @@
     </div>
     </div>
     </div>
-                <!-- fin contenido -->
-                <!-- inicio scripts -->
-                <%- include("./template/script") %>
-                    <!-- fin scripts -->
+        <%# fin contenido  %>
+        <%# inicio scripts  %>
+        <%- include("./template/script") %>
+        <%# fin scripts  %>
     </body>
-    <!-- inicio footer -->
+    <%# inicio footer  %>
     <%- include("./template/footer") %>
-    <!-- final footr -->
+    <%# fin footer %>
     </html>
+
+    

@@ -1,14 +1,15 @@
+<%#  inicio cabecera %>
 <%- include("../template/head", {tituloweb: 'Red aliados' }); %>
-    <!-- fin cabecera -->
+<%# fin cabecera %>
 
     <body>
-        <!-- navbar superior -->
+        <%#  Inicio de navbar superrior %>
         <%- include("../template/navbar") %>
-            <!-- fin navbar -->
-            <!-- siderbar o nav izquierdo -->
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
             <%- include("../template/siderbar") %>
-                <!-- fin de sidebar o nav izquierdo -->
-                <!-- inicio de el contenido -->
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
                 <br><br><br>
                 <div class="container-fluid">
                     <div class="card">
@@ -20,10 +21,10 @@
                                     style="height: 50%; background-color: #449B23;  color: #fff">Nuevo</a>
 
                             </div>
-                            <!-- Button trigger modal -->
+                   
+                            <%# Button trigger modal %>
 
-
-                            <!-- Modal -->
+                            <%#  modal %>
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                                 aria-hidden="true">
                                 <div class="modal-dialog">
@@ -47,7 +48,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- Vertically centered modal -->
+                            
+                            <%# Vertically centered modal %>
                             <div class="card-body">
                                 <table id="listarRegistros" class="table table-striped" style="width:100%">
                                     <thead style="background-color: #449B23; color: #fff">
@@ -88,11 +90,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- fin contenido -->
-                    <!-- inicio scripts -->
-                    <script src="list.js"></script>
-                    <%- include("../template/script") %>
-                        <!-- fin scripts -->
+                    <%# fin contenido  %>
+                <%# inicio scripts  %>
+                
+                <%- include("../template/script") %>
+                <%# fin scripts  %>
     </body>
 
     </html>

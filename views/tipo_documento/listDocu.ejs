@@ -1,14 +1,15 @@
+<%#  inicio cabecera %>
 <%- include("../template/head", {tituloweb: 'Red aliados' }); %>
-    <!-- fin cabecera -->
+<%# fin cabecera %>
 
     <body>
-        <!-- navbar superior -->
+        <%#  Inicio de navbar superrior %>
         <%- include("../template/navbar") %>
-            <!-- fin navbar -->
-            <!-- siderbar o nav izquierdo -->
+            <%#  fin de navbar %> 
+            <%#  fin de sidebar o nav izquierdo %> 
             <%- include("../template/siderbar") %>
-                <!-- fin de sidebar o nav izquierdo -->
-                <!-- inicio de el contenido -->
+                <%#  fin de sidebar o nav izquierdo %>                
+                <%# inicio de el contenido  %>
                 <br><br><br>
                 <div class="container-fluid" id="listarDocu">
                     <div class="card">
@@ -19,13 +20,13 @@
                                     class="btn btn">Nuevo </a>
 
                             </div>
-                            <!-- Button trigger modal -->
+                            <%# button modal  %>
 
 
 
-                            <!-- Vertically centered modal -->
+                            <%#vetical modal %>
 
-                            <!-- tabla -->
+                            <%# tabla %>
                             <div class="card-body">
                                 <table id="listarRegistros" class="table table-striped" style="width:100%">
                                     <thead style="background-color: #449B23; color: #fff">
@@ -69,11 +70,11 @@
                 </div>
                 </div>
                 </div>
-                <!-- fin contenido -->
-                <!-- inicio scripts -->
-                <script src="list.js"></script>
-                <%- include("../template/script") %>
-                    <!-- fin scripts -->
+              <%# fin contenido  %>
+            <%# inicio scripts  %>
+            <script src="list.js"></script>
+        <%- include("../template/script") %>
+        <%# fin scripts  %>
     </body>
 
     </html>
